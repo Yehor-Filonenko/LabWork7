@@ -227,7 +227,7 @@ void testStack(Stack& s, int iterations) {
     for (int i = 0; i < iterations; i++) {
 
         int value = randInt(-100, 100);
-
+        \\
         s.push(value);
 
         std::cout << std::setw(15) << "push"
@@ -256,14 +256,12 @@ void testStack(Stack& s, int iterations) {
 }
 
 int main() {
-
 #ifdef _WIN32
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 #endif
 
     try {
-
         // Завдання 5
         int rows = readInput<unsigned int>("Введіть кількість рядків: ");
         int columns = readInput<unsigned int>("Введіть кількість стовпців: ");
@@ -279,7 +277,6 @@ int main() {
 
         // Завдання 12
         Stack s(10);
-
         testStack(s, 10);
 
         columns = readInput<unsigned int>("Введіть кількість рядків: ");
