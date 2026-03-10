@@ -279,8 +279,6 @@ int main() {
         Stack s(10);
         testStack(s, 10);
 
-        columns = readInput<unsigned int>("Введіть кількість рядків: ");
-
     }
     catch (const std::exception& e) {
         std::cerr << "Помилка: " << e.what() << std::endl;
