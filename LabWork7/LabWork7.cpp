@@ -4,12 +4,12 @@
 #include <stdexcept>
 #include <iomanip>
 #include <string>
+#include <functional>
 
 #if _WIN32
 #define NOMINMAX
 #include <windows.h>
 #endif // _WIN32
-#include <functional>
 
 // генерація випадкового числа
 int randInt(int start, int end) {
@@ -227,7 +227,7 @@ void testStack(Stack& s, int iterations) {
     for (int i = 0; i < iterations; i++) {
 
         int value = randInt(-100, 100);
-        \\
+        
         s.push(value);
 
         std::cout << std::setw(15) << "push"
